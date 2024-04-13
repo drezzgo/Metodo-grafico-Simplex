@@ -38,6 +38,7 @@ Para usar el aplicativo debes tener alguna version de python (uso la 3.12)
     pip install itertools
     pip install linprog
     pip install pulp
+    pip install pyinstaller
     ```
 ## Dependencias
 
@@ -45,5 +46,6 @@ Para usar el aplicativo debes tener alguna version de python (uso la 3.12)
     *   Itertools : Se utiliza para generar secuencias de elementos de manera eficiente.
     *   Linprog : Es un módulo de optimización de SciPy que se utiliza para resolver problemas de optimización lineal de manera eficiente.
     *   Pulp :  Se utiliza para resolver problemas de optimización lineal, entera y mixta.
+    *   pyinstaller :  Se utiliza para empaquetar y crear un ejecutable .exe del proyecto (Por si necesitas entregarlo a un usuario solo desee usar el proyecto).
 
     Dentro del archivo de librerias encontraras un import que importa "funciones" este hace referencia al archivo funciones.py
