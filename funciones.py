@@ -19,12 +19,14 @@ def inspeccionar_datos(inicio, grafico, input_metodo, input_variables, input_res
         #Las variables o restricciones no pueden ser 0 ni para simplex ni para grafico
         if variables == 0 or restricciones == 0:
             messagebox.showerror("Error en tus datos", "Ni variables ni restricciones pueden ser igual a 0")
+            return
 
         #Si las variables ingresadas para el metodo grafico son mas, se avisa y se corrige
         if metodo == "Grafico" and variables != 2:
             messagebox.showerror("Error en tus datos", "El metodo grafico solo admite hasta 2 variables como maximo")
             input_variables.delete(0, END)
             input_variables.insert(0, "2")
+            return
         
         #Si las variables ingresadas para el metodo grafico estan bien, se continua
         elif metodo == "Grafico" and variables == 2:
